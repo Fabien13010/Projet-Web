@@ -1,10 +1,257 @@
 body {
-    background-image: url(df4e8ba28f912bf9cdf9fa0dfc196411.png);
+    font-family: Pokemon;
+    background-image: url(background.png);
     background-size: cover;
     background-attachment: fixed;
 
 }
-nav {
+ul {
     display: flex;
     position: relative;
+    justify-content: center;
+    list-style-type: none;
+      
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(255,255,255 ,0s));
+    backdrop-filter: blur(10px);
+    border:1px solid rgba(255,255,255, 0.18);
+    border-radius: 20px;
+    margin: 30px;
+  }
+
+
+.card h2
+{
+ position:absolute;
+ top: -200px;
+ right: 0px;
+ font-size: 2em;
+ color:rgba(255, 255, 255, 0.55);
+ pointer-events:100ù
+}  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+.container
+{
+    padding: 2px 16px;
+    
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 10px 100px;
+} 
+
+.card2 
+{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transform:translateY(20px);
+  opacity:0;
+  transition: 0.5s;
+}
+.card2:hover{
+  transform:translateY(0px);
+  opacity:1;
+}
+
+
+
+
+  @font-face {
+      font-family: Pokemon;
+      src: url(Pokemon\ Classic.ttf);; height: 100%
+  }
+
+    
+li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover {
+    background-color: red;
+  }
+  
+.active {
+    background-color: #333;
+}
+.coteacote {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+} 
+.plante
+{
+  border-radius: 5px;
+  background-color: rgba(8, 131, 53,0.8);
+  justify-content: flex-start;
+  padding: 1 100px 1 100px;
+  font-size: 10px;
+}
+.poison
+{
+   border-radius: 5px;
+   background-color: rgba(131, 8, 115,0.8);
+   justify-content: flex-start;
+   padding: 1 100px 1 100px;
+   font-size: 10px;
+}
+.feu
+{
+  border-radius: 5px;
+  background-color: rgba(248, 105, 9, 0.8);
+  justify-content: flex-start;
+  padding: 1 100px 1 100px;
+  font-size: 10px;
+}
+.eau
+{
+   border-radius: 5px;
+   background-color: rgba(16, 131, 207, 0.8);
+   justify-content: flex-start;
+   padding: 1 100px 1 100px;
+   font-size: 10px;
+}
+.normal
+{
+  border-radius: 5px;
+  background-color: rgba(82, 81, 81, 0.8);
+  justify-content: flex-start;
+  padding: 1 100px 1 100px;
+  font-size: 10px;
+}
+.spectre
+{
+   border-radius: 5px;
+   background-color: rgba(63, 12, 93, 0.8);
+   justify-content: flex-start;
+   padding: 1 100px 1 100px;
+   font-size: 10px;
+}
+.roche
+{
+  border-radius: 5px;
+  background-color: rgba(98, 70, 38, 0.8);
+  justify-content: flex-start;
+  padding: 1 100px 1 100px;
+  font-size: 10px;
+}
+.sol
+{
+   border-radius: 5px;
+   background-color: rgba(187, 123, 20, 0.8);
+   justify-content: flex-start;
+   padding: 1 100px 1 100px;
+   font-size: 10px;
+}
+.fée
+{
+  border-radius: 5px;
+  background-color: rgba(241, 196, 234, 0.8);
+  justify-content: flex-start;
+  padding: 1 100px 1 100px;
+  font-size: 10px;
+}
+.psy
+{
+   border-radius: 5px;
+   background-color: rgba(205, 26, 221, 0.8);
+   justify-content: flex-start;
+   padding: 1 100px 1 100px;
+   font-size: 10px;
+}
+.insecte
+{
+  border-radius: 5px;
+  background-color: rgba(179, 221, 81, 0.8);
+  justify-content: flex-start;
+  padding: 1 100px 1 100px;
+  font-size: 10px;
+}
+.vol
+{
+   border-radius: 5px;
+   background-color: rgba(154, 203, 223, 0.8);
+   justify-content: flex-start;
+   padding: 1 100px 1 100px;
+   font-size: 10px;
+}
+.electrique
+{
+  border-radius: 5px;
+  background-color: rgb(255, 230, 5);
+  justify-content: flex-start;
+  padding: 1 100px 1 100px;
+  font-size: 10px;
+}
+.acier
+{
+   border-radius: 5px;
+   background-color: rgba(78, 110, 122, 0.8);
+   justify-content: flex-start;
+   padding: 1 100px 1 100px;
+   font-size: 10px;
+}
+.combat
+{
+  border-radius: 5px;
+  background-color: rgb(219, 60, 86);
+  justify-content: flex-start;
+  padding: 1 100px 1 100px;
+  font-size: 10px;
+}
+.dragon
+{
+   border-radius: 5px;
+   background-color: rgba(22, 42, 223, 0.8);
+   justify-content: flex-start;
+   padding: 1 100px 1 100px;
+   font-size: 10px;
+}
+.tenebres
+{
+   border-radius: 5px;
+   background-color: rgb(0, 0, 0);
+   justify-content: flex-start;
+   padding: 1 100px 1 100px;
+   font-size: 10px;
+}
+
+
+
+
+
+
