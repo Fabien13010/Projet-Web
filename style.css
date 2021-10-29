@@ -1,0 +1,10 @@
+body {
+    background-image: url(df4e8ba28f912bf9cdf9fa0dfc196411.png);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+nav {
+    display: flex;
+    position: relative;
+}
